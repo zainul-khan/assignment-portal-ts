@@ -2,8 +2,10 @@
 
 A backend system for an assignment submission portal where users can upload assignments, and admins can review and accept or reject them.
 
-Features
-Common Feauures //I have created a common endpoint for both user and admin differentiaing them from role type I know its not safe in actual project we need different endpoints for atleast sign up for both the entities. 
+Features<br>
+Common features 
+
+I have created a common endpoint for both user and admin differentiaing them from role type I know its not safe in actual project we need different endpoints for atleast sign up for both the entities. 
 Register: Create an account to upload assignments.
 Login: Authenticate users with secure JWT-based tokens.
 
@@ -21,8 +23,23 @@ Authentication: JWT (JSON Web Tokens)
 Validation: Joi
 Language: TypeScript
 
-SETUP
-Clone this repo
-cd ./folder-name
-npm install
-npm run dev
+SETUP <br>
+Clone this repo <br>
+cd ./folder-name <br>
+npm install <br>
+npm run dev <br>
+
+Endoints <br>
+
+Common <br>
+/api/register [POST]<br> 
+/api/login  [POST]<br>
+
+User <br>
+/api/upload  [POST]<br>
+
+Admin <br>
+/admin/assignments [GET] <br>
+/assignments/:id/accept [PUT] <br>
+/assignments/:id/reject [PUT] <br>
+
